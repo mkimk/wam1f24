@@ -43,6 +43,31 @@
         @media screen and (min-width: 780px) and (max-width: 850px) { /* Cindy */
         }
         @media screen and (min-width: 710px) and (max-width: 780px) { /* Jolin */
+            body{
+                background-image: linear-gradient(90deg, #FF33B1, #FFF4F9,#95ff00);
+            }
+            [id^=div] {
+                display: none;
+            }
+            #div3 {
+                display: block;
+                position: absolute;
+                background: radial-gradient(ellipse at top, #FFF4F9, #72e7ff);;
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                animation: rotate 3s infinite;
+                animation-timing-function: ease-in-out;
+                transition-delay: 4s;
+                left: 35%;
+                top: 35%;
+                box-shadow: rgba(46, 227, 240, 0.4) -5px 5px, rgba(46, 237, 240, 0.3) -10px 10px, rgba(46, 233, 240, 0.2) -15px 15px, rgba(46, 240, 233, 0.1) -20px 20px, rgba(46, 240, 240, 0.05) -25px 25px;
+                }
+            @keyframes rotate {
+                0%{transform: rotate(0deg) translateY(200px) scale(1);}
+                50%{transform: rotate(360deg) translateY(100px)scale(2);}
+                100%{transform: rotate(0deg)translateY(200px)scale(1);}
+            }
         }
         @media screen and (min-width: 640px) and (max-width: 710px) { /* Nanrin */
             body {
