@@ -41,6 +41,47 @@
         @media screen and (min-width: 850px) and (max-width: 920px) { /* Mike */
         }
         @media screen and (min-width: 780px) and (max-width: 850px) { /* Cindy */
+            body {
+                background-color: rgb(26, 26, 26);
+            }
+
+            [id^=div] {
+                display: none;
+            }
+
+            #div1 { 
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 5vw;
+                height: 5vw;
+                padding: 20%;
+                border-radius: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                animation: animate 3s infinite;
+                animation-timing-function: ease-in-out;
+                transition-delay: 4s;animation: animate 3s infinite;
+                animation-timing-function: ease-in-out;
+                transition-delay: 3s;
+            }
+
+            .stacked-gradi {
+                background: linear-gradient(
+                    217deg,
+                rgba(132, 20, 110, 0.8),
+                rgb(221, 226, 204) 70.71%),
+                linear-gradient(127deg, rgba(100, 63, 103, 0.8), rgba(93, 42, 123, 0) 70.71%),
+                linear-gradient(336deg, rgba(233, 238, 222, 0.8), rgba(26, 26, 102, 0) 70.71%);
+                }
+
+            @keyframes animate {
+                0%{transform: translateX(5px) translateY(-200px) scale(1);}
+                50%{transform: translateX(5px) translateY(-100px)scale(3);}
+                100%{transform: translateX(5px) translateY(-200px)scale(1);}
+            }
+
+
         }
         @media screen and (min-width: 710px) and (max-width: 780px) { /* Jolin */
             body{
@@ -124,7 +165,7 @@
     </style>
 </head>
 <body>
-    <div id="div1"></div>
+    <div id="div1" class="stacked-gradi"></div>
     <div id="div2"></div>
     <div id="div3"></div>
     <div id="div4"></div>
