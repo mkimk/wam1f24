@@ -30,8 +30,7 @@
         }
         @media screen and (min-width: 1200px) and (max-width: 1270px) { /* Cynthia */
         }
-        @media screen and (min-width: 1130px) and (max-width: 1200px) { /* Claire */
-        }
+        
         @media screen and (min-width: 1060px) and (max-width: 1130px) { /* Brianna */
         }
         @media screen and (min-width: 990px) and (max-width: 1060px) { /* Li June */
@@ -198,6 +197,54 @@
                 transform: translateX(-50%) translateY(-50%);
             }
         }
+
+
+        @media screen and (min-width: 1130px) and (max-width: 1200px) { /* Claire */
+            body {
+                    background: linear-gradient(-45deg, #ff1493, #ff69b4, #ff007f, #ff0051, #ff00ff, #8b008b);
+                    background-size: 400% 400%;
+                    animation: gradientBG 8s ease-in-out infinite;
+                }
+            @keyframes gradientBG {
+                    0% {background-position: 0% 50%;}
+                    50% {background-position: 100% 50%;}
+                    100% {background-position: 0% 50%;}
+                }
+
+            [id^=div] {
+                display: none;
+            }
+            
+            #div1 {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 200px;
+                height: 200px;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                animation: pulse 2s ease-in-out infinite;
+            }
+            
+            @keyframes pulse {
+                0% {
+                    transform: translate(-50%, -50%) scale(0.8);
+                    opacity: 0.3;
+                }
+                50% {
+                    transform: translate(-50%, -50%) scale(1.2);
+                    opacity: 0.8;
+                }
+                100% {
+                    transform: translate(-50%, -50%) scale(0.8);
+                    opacity: 0.3;
+                }
+            }
+        }
+
+
     </style>
 </head>
 <body>
