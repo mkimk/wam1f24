@@ -33,6 +33,68 @@
         @media screen and (min-width: 1130px) and (max-width: 1200px) { /* Mike */
         }
         @media screen and (min-width: 1060px) and (max-width: 1130px) { /* Brianna */
+            @keyframes moveY {
+                0% {
+                    transform: translateY(100vw);
+                    opacity: 0.5;
+                }
+                50% {
+                    transform: translateY(0vw);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(100vw);
+                    opacity: 0.5;
+                }
+            }
+            @keyframes shrink {
+                0%{
+                    transform: scaleX(30%);
+                }
+                100%{
+                    transform: scaleX(80%);
+                }
+            }
+            
+            body{
+                background: linear-gradient(-45deg, #7a14ff, #d9f6ff, #000dff, #5d00ff, #00ccff, #8b008b);
+                height:100vh;
+                display:flex;
+                flex-flow:row nowrap;
+                margin:5%;
+            }
+
+            [id^=div] {
+                display: none;
+            }
+
+            #div1{
+                display:flex;
+                width: 10px;
+                height: 10px;
+                background-color:rgb(212, 246, 255);
+                border-radius: 50%;
+                animation: moveY 10s infinite ;
+            }
+            #div3{
+
+                display:flex;
+                width:60%;
+                height:50%;
+                border-radius:30%;
+                border: solid 20px blue;
+                background-color: white;
+                animation: shrink 4s alternate infinite;
+            }
+            #div5{
+                display:flex;
+                width: 10px;
+                height: 10px;
+                background-color:white;
+                border-radius: 50%;
+                animation: moveY 10s infinite;
+            }
+
         }
         @media screen and (min-width: 990px) and (max-width: 1060px) { /* Li June */
 
