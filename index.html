@@ -33,6 +33,7 @@
         @media screen and (min-width: 1130px) and (max-width: 1200px) { /* Mike */
         }
         @media screen and (min-width: 1060px) and (max-width: 1130px) { /* Brianna */
+            
             @keyframes moveY {
                 0% {
                     transform: translateY(100vw);
@@ -51,8 +52,18 @@
                 0%{
                     transform: scaleX(30%);
                 }
-                100%{
+                25%{
                     transform: scaleX(80%);
+                }
+                50%{
+                    transform: scaleX(30%);
+                    transform:scaleY(30%);
+                }
+                75%{
+                    transform:scaleY(80%);
+                }
+                75%{
+                    transform:scaleY(30%);
                 }
             }
             
@@ -62,6 +73,7 @@
                 display:flex;
                 flex-flow:row nowrap;
                 margin:5%;
+                justify-content: center;
             }
 
             [id^=div] {
@@ -84,7 +96,7 @@
                 border-radius:30%;
                 border: solid 20px blue;
                 background-color: white;
-                animation: shrink 4s alternate infinite;
+                animation: shrink 4s infinite;
             }
             #div5{
                 display:flex;
@@ -94,6 +106,7 @@
                 border-radius: 50%;
                 animation: moveY 10s infinite;
             }
+
 
         }
         @media screen and (min-width: 990px) and (max-width: 1060px) { /* Li June */
