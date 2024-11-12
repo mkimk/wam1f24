@@ -29,8 +29,82 @@
         @media screen and (min-width: 1270px) and (max-width: 1340px) { /* Janice */
         }
         @media screen and (min-width: 1200px) and (max-width: 1270px) { /* Hyunmin */
-        }
-        @media screen and (min-width: 1130px) and (max-width: 1200px) { /* Mike */
+            body{
+                background-color: black;
+            }
+
+            [id^=div] {
+                display: none;
+            }
+
+            #div1 {
+                display:block;
+                position: absolute;
+                top:0; 
+                left:0; 
+                width: 80px;
+                height: 80px;
+                background-color: red;
+                border-radius: 50%;
+                animation: moveAround 6s ease-in infinite;
+
+            }
+                
+                @keyframes moveAround {
+                     0% { top: 0; left: 0; }
+                     25% { top: 0; left: 100%; 
+                        transform: translateX(-100%); background-color: #00a169;}
+                     50% { top: 100%; left: 100%; 
+                        transform: translate(-100%, -100%); background-color:#000dff}
+                     75% { top: 100%; left: 0; 
+                        transform: translateY(-100%);background-color:rgb(255, 255, 255); }
+                    100% { top: 0; left: 0; }
+                }
+
+
+            #div2 {
+                display:block;
+                position: absolute;
+                top:0; 
+                left:0; 
+                width: 80px;
+                height: 80px;
+                background-color: red;
+                border-radius: 50%;
+                animation: moveAround 10s ease-in infinite;
+                animation-delay:6s;
+            }
+
+            #div3 {
+                display:block;
+                position: absolute;
+                top:0; 
+                left:0; 
+                width: 80px;
+                height: 80px;
+                background-color: red;
+                border-radius: 50%;
+                animation: moveAround 14s ease-in infinite;
+                animation-delay:16s;
+            }
+
+            #div4 {
+                display:block;
+                position: absolute;
+                top:0; 
+                left:0; 
+                width: 80px;
+                height: 80px;
+                background-color: red;
+                border-radius: 50%;
+                animation: moveAround 18s ease-in infinite;
+                animation-delay:30s;
+            }
+           
+}
+
+        
+@media screen and (min-width: 1130px) and (max-width: 1200px) { /* Mike */
 
             @keyframes moveY {
                 0% {
