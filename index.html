@@ -25,7 +25,141 @@
         @media screen and (min-width: 1410px) and (max-width: 1480px) { /* Sejal */
         }
         @media screen and (min-width: 1340px) and (max-width: 1410px) { /* Cynthia */
-        }
+          body {
+            background-image: linear-gradient(to right, #9b9b9b, #6f00ff, #000dff, #28d0ff, #005d8f, #b5ffdf, #c8ff00, #8f8100, #ff774a, #ff0000, #8f003c, #fc53ff);
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+          }
+
+          [id^=div] {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+          }
+
+          #div1 {
+            background-color: #000dff;
+            animation: rotateSkew 2s alternate infinite ease-in-out;
+            left: 0%;
+            top: 50%;
+            animation-delay: -1s;
+          }
+
+          #div2 {
+            background-color: #fc53ff;
+            animation: rotateResizeToSquare 2s alternate infinite ease-in-out;
+            left: 50%; 
+            top: 0;
+            animation-delay: -1s;
+          }
+
+          #div3 {
+            background-color: #ff774a;
+            animation: rotateSkew 2s alternate infinite ease-in-out;
+            left: 70%;
+            top: 0;
+          }
+
+          #div4 {
+            background-color: #b5ffdf;
+            animation: rotateResizeToSquare 2s alternate infinite ease-in-out;
+            left: 55%;
+            top: 0;
+          }
+
+          #div5 {
+            background-color: #ff0000;
+            animation: rotateSkew 2s alternate infinite ease-in-out;
+            left: 45%;
+            top: 0;
+            animation-delay: -1s;
+          }
+
+          #div6 {
+            background-color: #28d0ff;
+            animation: rotateResizeToSquare 2s alternate infinite ease-in-out;
+            left: 10%;
+            top: 0;
+            animation-delay: -1s;
+          }
+
+          #div7 {
+            background-color: #c8ff00;
+            animation: rotateSkew 2s alternate infinite ease-in-out;
+            left: 35%;
+            top: 0;
+          }
+
+          #div8 {
+            background-color: #6f00ff;
+            animation: rotateResizeToSquare 2s alternate infinite ease-in-out;
+            left: 80%;
+            top: 0;
+          }
+
+          #div9 {
+            background-color: #005d8f;
+            animation: rotateSkew 2s alternate infinite ease-in-out;
+            left: 85%;
+            top: 0;
+            animation-delay: -1s;
+          }
+
+          #div10 {
+            background-color: #8f8100;
+            animation: rotateResizeToSquare 2s alternate infinite ease-in-out;
+            left: 60%;
+            top: 0;
+            animation-delay: -1s;
+          }
+
+          #div11 {
+            background-color: #8f003c;
+            animation: rotateSkew 2s alternate infinite ease-in-out;
+            left: 47%;
+            top: 1rem;
+          }
+
+          #div12 {
+            background-color: #9b9b9b;
+            animation: rotateResizeToSquare 2s alternate infinite ease-in-out;
+            left: 85%;
+            top: 0;
+          }
+
+          @keyframes rotateResizeToSquare {
+           from {
+            border-radius: 50%;
+            transform: scale(100%);
+           }
+
+           to {
+            border-radius: 0;
+            transform: rotate(180deg) scale(200%);
+           }
+          }
+
+          @keyframes rotateSkew {
+            from {
+              /* width: 100%; */
+              /* transform: scale(100%); */
+            }
+
+            to {
+              width: 360%;
+              transform: rotate(90deg);
+            }
+          }
+
+          @keyframes name {
+
+          }
+        }  
+
         @media screen and (min-width: 1270px) and (max-width: 1340px) { /* Janice */
             body {
       background-color: rgb(83, 83, 83);
