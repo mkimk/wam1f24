@@ -21,6 +21,92 @@
         @media screen and (min-width: 1550px) { /* Lea */
         }
         @media screen and (min-width: 1480px) and (max-width: 1550px) { /* Sophie */
+       
+  
+    body {
+
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #000000;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      gap: 10px;
+      width: 90vw;
+      height: 90vh;
+      margin-top: 300px;
+    }
+
+ 
+
+    [id^=div] {
+      width: 100%;
+      aspect-ratio: 1;
+      background-color: #ffffff;
+      border-radius: 50%;
+      animation: jump 2s infinite ease-in-out;
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+  
+    #div11{
+    display: none;
+   }
+   #div12{
+    display: none;
+   }
+   #div13{
+    display: none;
+   }
+   #div14{
+    display: none;
+   }
+   #div15{
+    display: none;
+   }
+   #div16{
+    display: none;
+   }
+   #div17{
+    display: none;
+   }
+   #div18{
+    display: none;
+   }
+   #div19{
+    display: none;
+   }
+   #div20{
+    display: none;
+   }
+
+    #div1 { animation-delay: 0s; }
+    #div2 { animation-delay: 0.2s; }
+    #div3 { animation-delay: 0.4s; }
+    #div4 { animation-delay: 0.6s; }
+    #div5 { animation-delay: 0.8s; }
+    #div6 { animation-delay: 1s; }
+    #div7 { animation-delay: 1.2s; }
+    #div8 { animation-delay: 1.4s; }
+    #div9 { animation-delay: 1.6s; }
+    #div10 { animation-delay: 1.8s; }
+
+    @keyframes jump {
+      0%, 100% {
+        transform: translateY(0);
+        background-color: #000000;
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+      }
+      50% {
+        transform: translateY(-600px);
+        background-color: #ffffff;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 
+                    0 0 60px rgba(255, 255, 255, 0.4);
+      }
+    }
+
+
+
+       
         }
 
         
